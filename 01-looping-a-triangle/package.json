@@ -7,12 +7,13 @@
     "test": "test"
   },
   "scripts": {
-    "test": "module"
+    "test": "nyc mocha"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.3.4",
-    "mocha": "^9.1.3"
+    "mocha": "^9.1.3",
+    "nyc": "^15.1.0"
   }
 }
