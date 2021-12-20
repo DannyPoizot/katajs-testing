@@ -2,10 +2,24 @@ const chai = require("chai");
 
 const assert = chai.assert;
 
-const l = require("../looping");
+const looping = require("../looping");
 
-describe("return a triangle", function(){
-    it("should return a triangle", () => {
-        assert.isFunction(l, "l is not a function");
+describe("#loopingTriangle", function(){
+
+    // Array
+    it("should return an array", () => {
+        assert.isArray(looping(7), "Arrays is not defined." );
+    });
+
+    // String
+    it("should be a string", () => {
+        assert.isString(looping(7)[3], "That's not a string.");
+    
+    });
+
+    // Length of 7
+    it("should have seven lines", () => {
+        assert.lengthOf(looping(7), 7, "Array has length of 7");
     });
 });
+
