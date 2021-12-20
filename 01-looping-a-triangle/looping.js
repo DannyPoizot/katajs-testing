@@ -6,7 +6,7 @@ module.exports = (sizeTriangle) => {
     for (let i = 0; i < sizeTriangle; i++) {
         // Ajouter un # par ligne
         counter += '#';
-        array.push(counter)
+        array.push(counter);
     }
     return array;
 }

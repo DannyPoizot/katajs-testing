@@ -2,7 +2,9 @@
 // Deux exceptions: afficher "Fizz" pour les chiffres divisibles par 3, afficher "Buzz" pour les chiffres divisibles par 5.
 // Afficher "FizzBuzz" pour les nombres divisibles à la fois par 3 et 5.
 
-modele.exports = () => {
+
+module.exports = () => {
+  let numbers = [];
   // Affichage des nombres 1 à 100
   for (let i = 1; i < 101; i++) {
 
@@ -23,5 +25,8 @@ modele.exports = () => {
     } else {
       console.log(i);
     }
+    array.push(numbers);
   }
+
+   return numbers;
 }
