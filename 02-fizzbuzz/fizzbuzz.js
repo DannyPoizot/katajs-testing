@@ -6,7 +6,7 @@
 module.exports = () => {
   let numbers = [];
   // Affichage des nombres 1 à 100
-  for (let i = 1; i < 101; i++) {
+  for (let i = 1; i <= 100; i++) {
 
     // Affichage des nombres divisibles à la fois par 3 et 5
     if (i % 3 == 0 && i % 5 == 0) {
