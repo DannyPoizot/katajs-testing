@@ -8,6 +8,6 @@ describe("#fizzbuzz", function(){
 
     // Return an array
     it("should return an array", () => {
-        assert.isArray(fizz(), "That's not an array" );
+        assert.isArray(fizz(), "That's not an array");
     });
 });

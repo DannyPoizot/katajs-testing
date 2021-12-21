@@ -10,22 +10,22 @@ module.exports = () => {
 
     // Affichage des nombres divisibles à la fois par 3 et 5
     if (i % 3 == 0 && i % 5 == 0) {
-      console.log("FizzBuzz");
+      numbers.push("FizzBuzz");
     }
 
     // Affichage "Fizz" pour les nombres divisibles par 3
     else if (i % 3 == 0) {
-      console.log("Fizz");
+      numbers.push("Fizz");
     } else if (i % 5 == 0) {
 
       // Affichage "Buzz" pour les nombres divisibles par 5
-      console.log("Buzz");
+      numbers.push("Buzz");
 
       // On affiche les nombres restants
     } else {
-      console.log(i);
+      numbers.push(i);
     }
-    array.push(numbers);
+    
   }
 
    return numbers;
